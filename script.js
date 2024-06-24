@@ -126,15 +126,26 @@ document.addEventListener("DOMContentLoaded", () => {
       link.addEventListener('click', () => {
         const navbar = document.querySelector('.navbar');
         navbar.classList.remove('active');
-        // search.style.display = 'flex';
-        auth.style.display = 'flex';
+        // auth.style.display = 'flex';
       });
-      
-    }
-  );
-    
+    });
     
   }
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth < 480) {
+      search.style.display = 'none';
+      auth.style.display = 'none';
+    }
+  });
+
+  // Reset search and auth button visibility on window resize
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      search.style.display = 'flex';
+      auth.style.display = 'flex';
+    }
+  });
 
   // Scroll sections active link
   const sections = document.querySelectorAll("section[id]");
