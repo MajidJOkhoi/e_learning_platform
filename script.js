@@ -126,8 +126,8 @@ document.addEventListener("DOMContentLoaded", () => {
       link.addEventListener('click', () => {
         const navbar = document.querySelector('.navbar');
         navbar.classList.remove('active');
-        search.style.display = 'flex';
-        auth.style.display = 'flex';
+        search.style.display = 'none';
+        auth.style.display = 'none';
       });
     });
   }
