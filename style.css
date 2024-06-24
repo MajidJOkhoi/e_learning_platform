@@ -168,11 +168,11 @@ body.dark-mode {
 
   .nav__toggle .toggle_icon {
     position: absolute;
-    top: 10px;
-    right: 100px;
-    font-size: 60px;
+    top: 15px;
+    right: 10px;
+    font-size: 50px;
     color: white;
-    margin-right: 70px;
+    margin-right: 100px;
   }
 
   .menu {
