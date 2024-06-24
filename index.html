@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edushare</title>
+  
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>
+</head>
+
+<body>
+
+  <div class="navbar" id="navbar">
+    <div class="icon">
+      <h2 class="logo">Professo<span>R</span></h2>
+    </div>
+    <div class="menu" id="nav-menu">
+      <ul>
+        <li><a href="#features">features</a></li>
+        <li><a href="#courses">courses</a></li>
+        <li><a href="#reviews">reviews</a></li>
+        <li><a href="#testimonials">testimonials</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </div>
+    <div class="search" id="search">
+      <input class="srch" type="search" placeholder="Type to search">
+      <button class="btn" id="search-btn">Search</button>
+    </div>
+    <div class="auth" id="auth">
+      <button class="btn" onclick="toggleForm('login')">Login</button>
+      <button class="btn" onclick="toggleForm('signup')">Signup</button>
+    </div>
+    <div class="toggle-theme">
+      <ion-icon name="sunny-outline" id="theme-icon"></ion-icon>
+    </div>
+  </div>
+  <div class="nav__toggle" id="nav-toggle">
+    <ion-icon name="menu-outline" class="toggle_icon"></ion-icon>
+  </div>
+
+  <main>
+    <section class="banner" id="banner" class="searchable-item">
+      <div class="container">
+        <div class="banner-content">
+          <h1>Learning Courses by top teachers.</h1>
+          <p>
+            Send messages, share class materials, and make learning accessible
+            anywhere. Send messages, share class materials.
+          </p>
+          <div class="cta-buttons">
+            <button class="btn-primary">Get Started</button>
+            <button class="btn-primary">Watch Video</button>
+          </div>
+        </div>
+
+        <div class="banner-image">
+          <img src="./images/profile.png" alt="Learning" />
+        </div>
+      </div>
+    </section>
+
+    <!-- companies -->
+
+    <section class="trusted-by" id="trusted-by" class="searchable-item">
+      <div class="images">
+        <ul>
+          <li>
+            <img src="./images/microsoft.jpeg" alt="Microsoft" />
+          </li>
+          <li><img src="./images/google.jpeg" alt="Google" /></li>
+          <li><img src="./images/linked in.jpeg" alt="Linked in " /></li>
+          <li><img src="./images/meta.jpeg" alt="meta" /></li>
+          <li><img src="./images/airbnb.png" alt="airbnb" /></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- features -->
+
+    <section class="features" id="features" class="searchable-item">
+      <div class="container">
+        <div class="feature-card">
+          <div class="icon">
+            <img src="./images/teacher.webp" alt="Qualified Teachers" />
+          </div>
+          <h3>Qualified Teachers</h3>
+          <p>
+            Best for active freelancers and designers who need more projects
+            and premium features.
+          </p>
+          <div class="arrow">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="icon">
+            <img src="./images/pen.jpeg" alt="10k+ Lessons" />
+          </div>
+          <h3>10k+ Lessons</h3>
+          <p>
+            Best for active freelancers and designers who need more projects
+            and premium features.
+          </p>
+          <div class="arrow">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="feature-card">
+          <h3>What kind of Courses we offer</h3>
+          <p>
+            Best for active learners and programmers with specific needs and
+            preferences.
+          </p>
+          <div class="arrow">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- courses -->
+    <section class="courses" id="courses" class="searchable-item">
+      <div class="container">
+        <div class="course-header">
+          <h2>Find Your Perfect Course</h2>
+          <div class="arrows">
+            <div class="arrow arrow-left">
+              <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="arrow arrow-right">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="course-list">
+          <div class="course-card">
+            <img src="./images/ui ux.avif" alt="UI/UX Design" />
+            <div class="course-content">
+              <h3>UI/UX Design</h3>
+              <div class="course-info">
+                <span class="price">$123.30</span>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <p class="tutor">By John Doe</p>
+              <button class="btn-enroll">Enroll</button>
+            </div>
+          </div>
+          <div class="course-card">
+            <img src="./images/website.avif" alt="Coding Web" />
+            <div class="course-content">
+              <h3> MERN STACK </h3>
+              <div class="course-info">
+                <span class="price">$123.30</span>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <p class="tutor">By Jane Smith</p>
+              <button class="btn-enroll">Enroll</button>
+            </div>
+          </div>
+      
+          <div class="course-card">
+            <img src="./images/seo.avif" alt="Graphic Design" />
+            <div class="course-content">
+              <h3> SEO
+              </h3>
+              <div class="course-info">
+                <span class="price">$123.30</span>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <p class="tutor">By Mike Johnson</p>
+              <button class="btn-enroll">Enroll</button>
+            </div>
+          </div>
+          <div class="course-card">
+            <img src="./images/graphic.avif" alt="Graphic Design" />
+            <div class="course-content">
+              <h3>Graphic Design</h3>
+              <div class="course-info">
+                <span class="price">$123.30</span>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <p class="tutor">By Mike Johnson</p>
+              <button class="btn-enroll">Enroll</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section  -->
+
+    <section class="reviews" id="reviews" class="searchable-item">
+      <div class="container">
+          <h2>What Clients Say About Us</h2>
+          <div class="review-cards">
+              <div class="review-card">
+                  <img src="./images/user-2.avif" alt="Client 1" class="profile-pic">
+                  <div class="review-content">
+                      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet nisl nec odio sollicitudin."</p>
+                      <div class="reviewer-info">
+                          <span>Floyd Miles</span>
+                          <div class="rating">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star-half-alt"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="review-card">
+                  <img src="./images/user-4.png" alt="Client 2" class="profile-pic">
+                  <div class="review-content">
+                      <p>"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+                      <div class="reviewer-info">
+                          <span>Jane Cooper</span>
+                          <div class="rating">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="review-card">
+                  <img src="./images/user-7.png" alt="Client 3" class="profile-pic">
+                  <div class="review-content">
+                      <p>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                      <div class="reviewer-info">
+                          <span>Robert Fox</span>
+                          <div class="rating">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="review-card">
+                  <img src="./images/user-8.png" alt="Client 4" class="profile-pic">
+                  <div class="review-content">
+                      <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+                      <div class="reviewer-info">
+                          <span>Emily Clark</span>
+                          <div class="rating">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star-half-alt"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- testimonials -->
+
+    <div class="container">
+      <div class="testimonials-header" id="testimonials" class="searchable-item">
+          <h2>Success Stories</h2>
+          <button class="btn-see-all">See All</button>
+      </div>
+      <div class="testimonials-content">
+          <div class="main-testimonial">
+              <img src="./images/user-2.avif" alt="Success Story" />
+              <h3>Main Success Story</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet nisl nec odio sollicitudin.</p>
+          </div>
+          <div class="small-testimonials">
+              <div class="testimonial-card">
+                  <img src="./images/user-4.png" alt="Person 1" />
+                  <div class="testimonial-info">
+                      <h4>Floyd Miles</h4>
+                      <p>Senior UX Designer. Lorem ipsum dolor sit amet.</p>
+                  </div>
+              </div>
+              <div class="testimonial-card">
+                  <img src="./images/user-7.png" alt="Person 2" />
+                  <div class="testimonial-info">
+                      <h4>Jane Cooper</h4>
+                      <p>Graphic Designer. Lorem ipsum dolor sit amet.</p>
+                  </div>
+              </div>
+              <div class="testimonial-card">
+                  <img src="./images/user-8.png" alt="Person 3" />
+                  <div class="testimonial-info">
+                      <h4> John </h4>
+                      <p>Web Developer. Lorem ipsum dolor sit amet.</p>
+                  </div>
+              </div>
+              <div class="testimonial-card">
+                  <img src="./images/user-2.avif" alt="Person 3" />
+                  <div class="testimonial-info">
+                      <h4> Harry </h4>
+                      <p> App Developer Lorem ipsum dolor sit amet.</p>
+                  </div>
+              </div>
+              <div class="testimonial-card">
+                  <img src="./images/profile.png" alt="Person 3" />
+                  <div class="testimonial-info">
+                      <h4>majid ali</h4>
+                      <p>Web Developer. Lorem ipsum dolor sit amet.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- cta -->
+
+    <section class="cta" id="cta" class="searchable-item">
+      <div class="container">
+        <h2>Are you ready to start your courses now?</h2>
+        <button class="btn-primary">Get Started</button>
+        <button class="btn-secondary">Contact Us</button>
+      </div>
+    </section>
+  </main>
+  <div class="overlay" id="overlay"></div>
+
+
+  <!-- contact section -->
+
+ <div class="container" >
+  <div class="section" id="contact" class="searchable-item">
+    <h2 style="text-align: center;">Contact Us</h2>
+    <form class="contact-form">
+        <h2>Get In Touch</h2>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btnn"><a href="#">Send Message</a></button>
+    </form>
+</div>
+ </div>
+  
+
+
+  <div class="form-container"  id="form-container">
+    <div class="form" id="login-form">
+      <h2>Login Here</h2>
+      <input type="email" name="email" placeholder="Enter Email Here">
+      <input type="password" name="" placeholder="Enter Password Here">
+      <button class="btnn"><a href="#">Login</a></button>
+
+      <p class="link">Don't have an account?<br>
+          <a href="#" onclick="toggleForm('signup')">Sign up</a> here</p>
+      <p class="liw" >Log in with</p>
+
+      <div class="icons">
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+      </div>
+  </div>
+
+  <div class="form" id="signup-form">
+      <h2>Sign Up Here</h2>
+      <input type="text" name="username" placeholder="Enter Username Here">
+      <input type="email" name="email" placeholder="Enter Email Here">
+      <input type="password" name="" placeholder="Enter Password Here">
+      <button class="btnn"><a href="#">Sign Up</a></button>
+
+      <p class="link">Already have an account?<br>
+          <a href="#" onclick="toggleForm('login')">Login</a> here</p>
+      <p class="liw">Sign up with</p>
+
+      <div class="icons">
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+      </div>
+  </div>
+
+  </div>
+
+  
+  <footer>
+    <div class="container">
+        <div class="footer-links">
+            <div class="column">
+                <h3>Get In Touch</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Use Cases</h3>
+                <ul>
+                    <li><a href="#">For Students</a></li>
+                    <li><a href="#">For Teachers</a></li>
+                    <li><a href="#">For Organizations</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Download App</h3>
+                <ul>
+                    <li><a href="#">App Store</a></li>
+                    <li><a href="#">Google Play</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Professor. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+
+</body>
+</html>
